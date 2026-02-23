@@ -1,0 +1,17 @@
+{
+  "name": "blockchain-assessment",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Full-stack blockchain developer assessment (smart contracts & APIs)",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "npm run build --workspace=frontend && npm run build --workspace=backend"
+  },
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
